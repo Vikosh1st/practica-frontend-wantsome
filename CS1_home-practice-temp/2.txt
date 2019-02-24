@@ -1,0 +1,1 @@
+Rule #2: Create a new branch for every new feature
