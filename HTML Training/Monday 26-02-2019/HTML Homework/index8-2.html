@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Homework assignment 8.2</title>
+        <!-- Creati structura unei pagini HTML in doua variante: o data cu elemente din specificatia veche, iar apoi reutilizati codul
+    pentru a-l rescrie folosind elemente din HTML5. Folositi cel putin 10 elemente diferite -->
+    </head>
+    <!-- Structura unei pagini HTML cu elemente din HTML5 -->
+    <body>
+        <!-- Sorry for the styling, I couldn't help myself :) -->
+        <header style="display: flex;">
+            <img style="float: left; display: inline-block;" src="https://wantsome.ro/wp-content/uploads/2018/09/WWantsome_Logo_Light_03.png" alt="Wantsome logo">
+            <h1 style="text-align: center; display: inline-block; margin: 0 auto">Wantsome HTML training</h1>
+            <div style="float: right; display: inline-block;">
+                <button>Log in</button>
+                <button>Sign up</button>
+            </div>
+        </header>
+        <nav style="text-align:center; margin: 20px;">
+            <a href="#Elements">Elements</a>
+            <a href="#Semantics">Semantics </a>
+            <a href="#Forms">Forms</a>
+        </nav>
+        <main>
+            <aside id="Elements">
+                <h1>HTML Elements</h1>
+                <p>These are some new HTML elements:</p>
+                <ul>
+                    <li>article - Defines an article in a document</li>
+                    <li>aside - Defines content aside from the page content</li>
+                    <li>bdi - Isolates a part of text that might be formatted in a different direction from other text outside it</li>
+                    <li>details - Defines additional details that the user can view or hide</li>
+                    <li>dialog - Defines a dialog box or window</li>
+                    <li>figcaption - Defines a caption for a figure element</li>
+                    <li>figure - Defines self-contained content</li>
+                    <li>footer - Defines a footer for a document or section</li>
+                    <li>header - Defines a header for a document or section</li>
+                    <li>main - Defines the main content of a document</li>
+                    <li>mark - Defines marked/highlighted text</li>
+                    <li>meter - Defines a scalar measurement within a known range (a gauge)</li>
+                    <li>nav - Defines navigation links</li>
+                    <li>progress - Represents the progress of a task</li>
+                    <li>rp - Defines what to show in browsers that do not support ruby annotations</li>
+                    <li>rt - Defines an explanation/pronunciation of characters (for East Asian typography)</li>
+                    <li>ruby - Defines a ruby annotation (for East Asian typography)</li>
+                    <li>section - Defines a section in a document</li>
+                    <li>summary - Defines a visible heading for a details element</li>
+                    <li>time - Defines a date/time</li>
+                    <li>wbr - Defines a possible line-break</li>
+                </ul>
+            </aside>
+            <section id="Semantics">
+                <h1>HTML Semantics</h1>
+                <p>
+                    A semantic element clearly describes its meaning to both the browser and the developer.
+                    <br>Examples of non-semantic elements: <b><i>div</i></b> and <b><i>span</i></b> - Tells nothing about its content.
+                    <br>Examples of semantic elements: <b><i>form</i></b>, <b><i>table</i></b>, and <b><i>article</i></b> - Clearly defines its content.
+                    <br>HTML5 offers new semantic elements to define different parts of a web page:
+                </p>
+            </section>
+            <article id="Forms">
+                <h1>HTML Forms</h1>
+                <p>An HTML form contains form elements.
+                    <br>Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
+                    <br>The input element is the most important form element. The input element can be displayed in several ways, depending on the type attribute.
+                </p>
+                <ol>
+                    <li>Text Input - defines a one-line input field for text input</li>
+                    <li>Radio Button Input - defines a radio button. Radio buttons let a user select ONE of a limited number of choices</li>
+                    <li>The Submit Button - defines a button for submitting the form data to a form-handler.
+                    The form-handler is typically a server page with a script for processing input data.
+                    The form-handler is specified in the form's action attribute</li>
+                </ol>
+            </article>
+        </main>
+        <footer>
+            <a href="#Elements">Elements</a>
+            <a href="#Semantics">Semantics </a>
+            <a href="#Forms">Forms</a>
+        </footer>
+    </body>
+</html>
