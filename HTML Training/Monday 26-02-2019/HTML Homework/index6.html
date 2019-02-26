@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Homework assignment 3</title>
+        <!-- Afisati 5 imagini diferite. Fiecare imagine trebuie sa fie separata de doua linii invizibile. Fiecare imagine trebuie sa fie
+precedata de un titlu. A treia imagine trebuie sa aiba dimensiunile 200x200 cu o bordura de marimea 2 si un text
+alternativ care sa descrie ce reprezinta aceasta. -->
+        <style>
+            img {
+                max-width: 250px;
+            }
+            #special-image {
+                border: solid 2px black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- I've added some max width to the images as I've noticed they were too large
+        Also, I've added every image to a div element to separate each of them from the body and have their title in the same element -->
+        <div><img src="assets/lazy-cat.jpg"><br>This is how a lazy cat looks like</div>
+        <div><img src="assets/fat-cat.jpg"><br>This is how a fat cat looks like (probably from being lazy)</div>
+        <div><img id="special-image" src="assets/scared-cat.png" width="200px" height="200px" border="solid 2px black" alt="This should show a scared cat. If you cannot see it, just imagine one :)"><br>This is how a scared cat looks like (probably when seing water)</div>
+        <!-- The image border attribute is no longer supported in html5, so I've used a css id to apply the style instead -->
+        <div><img src="assets/wet-cat.jpg"><br>This is how a wet cat looks like</div>
+        <div><img src="assets/angry-cat.jpg"><br>This is how an angry cat looks like (probably after being wet)</div>
+    </body>
+</html>
