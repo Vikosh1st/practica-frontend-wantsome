@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="Nume">Nume*: </label>
+            <input name="Nume" type="text" placeholder="Nume" required><br>
+            <label for="Prenume">Prenume*: </label>
+            <input name="Prenume" type="text" placeholder="Prenume" required><br>
+            <label for="Varsta">Varsta: </label>
+            <input name="Varsta" type="number" min="18" max="50" placeholder="Varsta"><br>
+            <input name="Volume" type="range" min="1" max="100">
+            <label for="Volume">Volume</label><br>
+            <label for="Data-nasterii">Data-nasterii*: </label>
+            <input name="Data-nasterii" type="date" value="2019-02-28" required><br>
+            <input type="month">
+            <input type="week">
+            <input type="time"><br>
+            <label for="limbaj">Ce limbaj de programare preferi?*</label><br>
+            <input name="limbaj" type="checkbox" value="Java">Java<br>
+            <input name="limbaj" type="checkbox" value="JavaScript">JavaScript<br>
+            <input name="limbaj" type="checkbox" value=".NET">.NET<br>
+            <label for="limbaj">Ce limbaj de programare preferi?*</label><br>
+            <input name="limbaj" type="radio" value="Java">Java<br>
+            <input name="limbaj" type="radio" value="JavaScript" checked>JavaScript<br>
+            <input name="limbaj" type="radio" value=".NET">.NET<br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
