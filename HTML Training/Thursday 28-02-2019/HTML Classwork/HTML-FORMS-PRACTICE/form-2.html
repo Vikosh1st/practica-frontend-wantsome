@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Formular Finalizare Comanda</title>
+    </head>
+    <body>
+        <h2>Finalizare Comanda</h2>
+        <form>
+            <label for="Nume">Nume*: </label>
+            <input name="Nume" type="text" placeholder="Nume" required><br><br>
+            <label for="Prenume">Prenume*: </label>
+            <input name="Prenume" type="text" placeholder="Prenume" required><br><br>
+            <label for="cnp">CNP*: </label>
+            <input name="cnp" type="text" maxlength="13" minlength="13" required><br><br>
+            <label for="Sex">Sex</label>
+            <input name="Sex" type="radio" value="masculin">Masculin
+            <input name="Sex" type="radio" value="feminin">Feminin<br><br>
+            <label for="Data-nasterii">Data-nasterii*: </label>
+            <input name="Data-nasterii" type="date" required><br><br>
+            <label for="telefon">Numar de telefon*:</label>
+            <input name="telefon" type="tel" required placeholder="Numar de telefon"><br><br>
+            <label for="Plata">Plata cu card?</label>
+            <input name="Plata" type="radio" value="Da">Da
+            <input name="Plata" type="radio" value="Nu">Nu<br><br>
+            <label for="Card">Numar card*: </label>
+            <input name="Card" type="text" maxlength="16" minlength="16" required><br><br>
+            <label for="Adresa">Adresa*: </label>
+            <input name="Adresa" type="text" placeholder="Adresa" required><br><br>
+            <label for="Localitate">Localitate: </label>
+            <select name="Localitate">
+                <option value="Iasi">Iasi</option>
+                <option value="Botosani">Botosani</option>
+                <option value="Suceava">Suceava</option>
+                <option value="Bacau">Bacau</option>
+            </select><br><br>
+            <label for="Judet">Judet: </label>
+            <select name="Judet">
+                <option value="Iasi">Iasi</option>
+                <option value="Botosani">Botosani</option>
+                <option value="Suceava">Suceava</option>
+                <option value="Bacau">Bacau</option>
+            </select><br><br>
+            <label for="Tara">Tara: </label>
+            <select name="Tara">
+                <option value="Romania">Romania</option>
+                <option value="Germania">Germania</option>
+                <option value="Franta">Franta</option>
+                <option value="Belgia">Belgia</option>
+            </select><br><br>
+            <label>Comentarii:</label><br>
+            <textarea cols="50" rows="8" maxlength="100" placeholder="Adaugati alte comentarii aici"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
