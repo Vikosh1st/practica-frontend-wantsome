@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <!-- Homework assignment 4 -->
+        <title>My Feedback Form</title>
+    </head>
+    <body>
+        <h2>My Feedback Form</h2>
+        <form>
+            <ul>
+                <li><label for="Nume">Name:</label>
+                    <input name="Nume" type="text">
+                </li>
+                <li><label for="Email">Email:</label>
+                    <input name="Email" type="email">
+                </li>
+                <li><label for="Password">Password:</label>
+                    <input name="Password" type="password">
+                </li>
+                <li><label for="Emotions">Please check all the emotions that apply to you:</label>
+                    <ul>
+                        <li>Angry<input name="Emotions" type="checkbox" checked></li>
+                        <li>Sad<input name="Emotions" type="checkbox"></li>
+                        <li>Happy<input name="Emotions" type="checkbox"></li>
+                        <li>Ambivalent<input name="Emotions" type="checkbox"></li>
+                    </ul>
+                </li>
+                <li><label for="Satisfaction">How satisfied were you with our service?</label>
+                    <ul>
+                        <li>Very satisfied<input name="Satisfaction" type="radio" checked></li>
+                        <li>Satisfied<input name="Satisfaction" type="radio"></li>
+                        <li>Didn't care<input name="Satisfaction" type="radio"></li>
+                        <li>Dissatisfied<input name="Satisfaction" type="radio"></li>
+                        <li>Very dissatisfied<input name="Satisfaction" type="radio"></li>
+                    </ul>
+                </li>
+
+                <li><label for="Comments">Further comments:</label>
+                    <textarea name="Comments" rows="3" cols="20"></textarea>
+                </li>
+                <li><label for="Photo">Bio photo:</label>
+                    <input name="Photo" type="url">
+                    <input name="Photo" type="submit" value="Choose...">
+                </li>
+                <li><label for="Location">Location visited:</label>
+                    <select name="Location">
+                        <option value="">Select Location</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Sri-Lanka">Sri-Lanka</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Nepal">Nepal</option>
+                    </select>
+                </li>
+                <li><input type="submit" value="submit"></li>
+            </ul>
+        </form>
+    </body>
+</html>
