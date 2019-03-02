@@ -9,40 +9,40 @@
         <p><b>* denotes mandatory</b></p>
         <form>
             <label for="name">Full Name*:</label><br>
-            <input name="name" type="text" placeholder="FirstName LastName" required><br>
+                <input name="name" type="text" placeholder="FirstName LastName" required><br>
 
             <label for="email">Email address*:</label><br>
-            <input name="email" type="email" placeholder="EMAIL_ADDRESS" required><br>
+                <input name="email" type="email" placeholder="EMAIL_ADDRESS" required><br>
 
             <label for="package">Select Tour Package*:</label><br>
-            <select name="package" required>
-                <!-- I had to add an empty value to make the select element a required field -->
-                <option value=""></option>
-                <option value="Goa">Goa</option>
-                <option value="Thailand">Thailand</option>
-                <option value="Sri-Lanka">Sri-Lanka</option>
-                <option value="Malaysia">Malaysia</option>
-                <option value="Nepal">Nepal</option>
-            </select><br>
+                <select name="package" required>
+                    <!-- I had to add an empty value to make the select element a required field -->
+                    <option value=""></option>
+                    <option value="Goa">Goa</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Sri-Lanka">Sri-Lanka</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Nepal">Nepal</option>
+                </select><br>
 
             <label for="arrival">Arrival date*:</label><br>
-            <input name="arrival" type="date" min="2019-05-01" required><br>
+                <input name="arrival" type="date" min="2019-05-01" required><br>
 
             <label for="persons">Numer of persons*:</label><br>
-            <input name="persons" type="text" placeholder="UNKNOWN_TYPE" required><br>
+                <input name="persons" type="text" placeholder="UNKNOWN_TYPE" required><br>
 
             <!-- I couldn't find any way to make these checkboxes required without using JS -->
             <label for="avail">What would you want to avail?*</label><br>
-            Boarding <input name="avail" type="checkbox" value="boarding" required><br>
-            Fooding <input name="avail" type="checkbox" value="fooding" required><br>
-            Sight Seeing <input name="avail" type="checkbox" value="sight seeing" required><br>
+                Boarding <input name="avail" type="checkbox" value="boarding" required><br>
+                Fooding <input name="avail" type="checkbox" value="fooding" required><br>
+                Sight Seeing <input name="avail" type="checkbox" value="sight seeing" required><br>
 
             <label for="coupon">Discount Coupon code:</label><br>
-            <input name="coupon" type="text" placeholder="UNKNOWN_TYPE"><br>
+                <input name="coupon" type="text" placeholder="UNKNOWN_TYPE"><br>
 
             <label for="terms">Terms and Conditions*</label><br>
-            <input name="terms" type="radio" required>I agree
-            <input name="terms" type="radio" required>I disagree<br>
+                <input name="terms" type="radio" required>I agree
+                <input name="terms" type="radio" required>I disagree<br>
 
             <input name="finish" type="submit" value="Complete Reservation">
         </form>
