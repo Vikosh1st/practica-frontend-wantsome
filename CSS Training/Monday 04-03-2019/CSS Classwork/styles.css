@@ -1,0 +1,38 @@
+#style2 {
+    color: red;
+    
+}
+
+
+a[href="www.google.com"] {
+    color: yellow;
+}
+
+a[href$=".ro"] {
+    color:blue;
+}
+
+
+.style1 :first-child {
+    color: #4286f4;
+}
+
+#style2 :last-child {
+    color: #4ad468;
+}
+
+#style3 :nth-child(3n) {
+    color: #ce8e33;
+}
+
+a:hover {
+    color: red;
+}
+
+#style3 > h1 {
+    color: red;
+}
+
+h4 +h5 {
+    color: blue;
+}
