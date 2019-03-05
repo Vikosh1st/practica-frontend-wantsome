@@ -1,0 +1,52 @@
+li {
+    color: green;
+}
+
+li:nth-child(3) {
+    background-color: lightblue;
+}
+
+li:first-child {
+    border-top: 1px solid green;
+}
+
+li:last-child {
+    border-bottom: 5px dashed blue;
+}
+
+li:nth-child(3) a, li:nth-child(5) a {
+    color: red;
+}
+
+li:nth-child(5) a:hover {
+    color: grey;
+}
+
+li:nth-child(2), li:nth-child(5) {
+    list-style-type: none;
+}
+
+input[type=text]:focus {
+    background-color: lightgrey;
+}
+
+form div:first-child input {
+    color: green;
+}
+
+form div:nth-child(2) input {
+    color: blue;
+}
+
+input[type=password] {
+    color: white;
+}
+
+input[type=email]::selection {
+    background-color: yellow;
+    color: rgb(247, 110, 133);
+}
+
+input[type=submit]:hover {
+    color: red;
+}
