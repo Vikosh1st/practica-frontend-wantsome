@@ -1,0 +1,33 @@
+li a {
+    color:red;
+}
+
+.linkBorder {
+    border: 1px solid black;
+}
+
+#diferentColorLink a {
+    color: #C55;
+}
+
+.greenLink a {
+    color: green;
+}
+
+h1, h2 {
+    font-family: 'Rye', cursive;
+}
+
+p {
+    font-family: 'Arizonia', cursive;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+#image {
+    margin: 10px;
+    text-align: center;
+}
