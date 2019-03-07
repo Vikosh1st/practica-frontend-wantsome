@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework assignment 3</title>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    
+    <body>
+        <form>
+            <div>
+                <label for="search">Search for:</label><br>
+                <input name="search" type="search" size="35">
+                <input name="search" type="submit" value="Search">
+            </div>
+            <div>
+                <label style="float: left;" for="match">Match:</label>
+                    <div style="float: left;">
+                        <input name="match" type="radio" value="anyWord">Any word
+                        <input name="match" type="radio" value="allWord" checked>All word
+                        <input name="match" type="radio" value="exactPhrase">Exact phrase<br>
+                        <input name="match" type="checkbox" value="soundAlike" checked>Sound-alike matching
+                    </div>
+            </div>    
+            <div>
+                <label style="clear: both; float: left;" for="match">Dated:</label>
+                <div style="float: left;">
+                    <input name="dated" type="radio">
+                        <select name="within" >
+                            <option value="lastYear">Within the last year</option>
+                            <option value="2018">Within 2018</option>
+                            <option value="2017">Within 2017</option>
+                            <option value="2016">Within 2016</option>
+                            <option value="2015">Within 2015</option>
+                        </select><br>
+                    <input style="float: left;" name="dated" type="radio" checked>
+                    <div style="float: right;">
+                        <label for="from">From:</label>
+                        <select name="from" id="month">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="from" id="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>,
+                        <input name="from" type="number" min="2015" max="2019" id="year">
+                        <br>
+                        <label for="to">To:</label>
+                        <select name="to" id="month">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="to" id="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>,
+                        <input name="to" type="number" min="2015" max="2019" id="year">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both; float: left;">
+                <label for="in">Within:</label>
+                <select name="in">
+                    <option value="Description">Description</option>
+                    <option value="Name">Name</option>
+                    <option value="nameDescription">Name and description</option>
+                </select>
+            </div><br>
+            <div style="clear: both;">
+                <label for="show">Show:</label>
+                <select name="show">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select> results
+                <select name="show">
+                    <option value="with">with</option>
+                    <option value="without">without</option>
+                </select> summaries
+            </div>
+            <div style="clear: both;">
+                <label for="sort">Sort by:</label>  
+                <select name="sort">
+                    <option value="relevance">relevance</option>
+                    <option value="mostViewed">most viewed</option>
+                    <option value="timeAdded">time added</option>
+                </select>
+            </div>
+        </form>
+    </body>
+</html>

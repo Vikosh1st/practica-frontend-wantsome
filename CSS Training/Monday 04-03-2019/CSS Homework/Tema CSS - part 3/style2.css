@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+}
+
+.outline {
+    display: inline-block;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    width: 500px;
+    height: 600px;
+}
+
+#inline {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    width: 490px;
+    height: 590px;
+    margin: 5px;    
+    font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+}
+
+p {
+    color: darkgray;
+    font-family: 'Pacifico', cursive;
+}
+
+p:before {
+    content: "*";
+    color: red;
+} 
+
+form {
+    margin: 20px 80px; 
+    text-align: left;
+}
+
+#required:after {
+    content: "*";
+    color: red;
+} 
+
+label{
+    font-size:15px;
+    font-weight:700;
+}
+input[type="submit"] {
+    background-color: lightgreen;
+}
+
+input {
+    shadow: 
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Homework assignment 2 -->
+        <title>Travel Reservation Form</title>
+        <link rel="stylesheet" href="style2.css">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Pacifico" rel="stylesheet">
+    </head>
+    <body>
+        <div class="outline">
+            <div id="inline">
+                <h2>Travel Reservation Form</h2>
+                <p><b>denotes mandatory</b></p>
+                <form>
+                    <label for="name" id="required">Full Name:</label>
+                        <input name="name" type="text" placeholder="FirstName LastName" required><br>
+
+                    <label for="email" id="required">Email address:</label>
+                        <input name="email" type="email" placeholder="EMAIL_ADDRESS" required><br>
+
+                    <label for="package" id="required">Select Tour Package:</label>
+                        <select name="package" required>
+                            <!-- I had to add an empty value to make the select element a required field -->
+                            <option value=""></option>
+                            <option value="Goa">Goa</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="SriLanka">Sri-Lanka</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Nepal">Nepal</option>
+                        </select><br>
+
+                    <label for="arrival" id="required">Arrival date:</label>
+                        <input name="arrival" type="date" min="2019-05-01" required><br>
+
+                    <label for="persons" id="required">Numer of persons:</label>
+                        <input name="persons" type="text" placeholder="UNKNOWN_TYPE" required><br>
+
+                    <!-- I couldn't find any way to make these checkboxes required without using JS -->
+                    <label for="avail" id="required">What would you want to avail?</label><br>
+                        Boarding <input name="avail" type="checkbox" value="boarding" required><br>
+                        Fooding <input name="avail" type="checkbox" value="fooding" required><br>
+                        Sight Seeing <input name="avail" type="checkbox" value="sight seeing" required><br>
+
+                    <label for="coupon">Discount Coupon code:</label>
+                        <input name="coupon" type="text" placeholder="UNKNOWN_TYPE"><br>
+
+                    <label for="terms" id="required">Terms and Conditions:</label>
+                        <input name="terms" type="radio" required>I agree
+                        <input name="terms" type="radio" required>I disagree<br><br>
+
+                    <input name="finish" type="submit" value="Complete Reservation">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
