@@ -1,4 +1,4 @@
-li {
+li:nth-child(even) {
     color: green;
 }
 
@@ -39,7 +39,7 @@ form div:nth-child(2) input {
 }
 
 input[type=password] {
-    color: white;
+    color: transparent;
 }
 
 input[type=email]::selection {

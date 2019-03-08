@@ -5,7 +5,7 @@ body {
 
 .outline {
     display: inline-block;
-    border: solid 1px lightgray;
+    border: 1px solid lightgray;
     border-radius: 10px;
     width: 500px;
     height: 600px;

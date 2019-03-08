@@ -1,0 +1,23 @@
+h1 {
+    border: 2px solid red;
+    background-color: #6A6; 
+    padding: 10px;
+}
+
+ul {
+    margin: 15px;
+    background-color: #DE1E7E;
+}
+
+div {
+    width: 500px;
+    height: 300px;
+    border: 2px dotted black;
+    background-color: #FB1;
+    overflow: auto;
+}
+
+a {
+    border-bottom: 1px dashed blue;
+    background-color: #a1a1a1;
+}
