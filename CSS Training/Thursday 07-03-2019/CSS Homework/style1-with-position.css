@@ -1,0 +1,33 @@
+body {
+    border: 3px solid blue;
+    position: relative;
+    margin: 0 auto;
+}
+
+header {
+    display: none;
+    border: 3px solid black;
+    position: relative;
+}
+nav {
+    border: 3px solid red;
+    width: 150px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+main {
+    position: relative;
+    margin-left: 150px;
+}
+
+section {
+    border: 3px solid yellow;
+    position: relative;
+}
+
+footer {
+    border: 3px solid green;
+    position: relative;
+    bottom: 0;
+}

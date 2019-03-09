@@ -1,0 +1,33 @@
+body {
+    border: 3px solid blue;
+    margin: 0 auto;
+}
+
+header {
+    display: none;
+    border: 3px solid black;
+}
+
+nav {
+    border: 3px solid red;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+}
+
+main {
+    display: inline-block;
+    width: 80%;
+    float: right;
+    box-sizing: border-box;
+}
+
+section {
+
+    border: 3px solid yellow;
+}
+
+footer {
+    border: 3px solid green;
+    clear: both;
+}
