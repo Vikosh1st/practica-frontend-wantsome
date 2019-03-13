@@ -1,0 +1,10 @@
+.image {
+    background-image: url(https://hluhluwegamereserve.com/wp-content/uploads/2014/03/IMG_1579.jpg);
+    background-size: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    width: 1000px;
+    height: 700px;
+    border: 3px dotted red;
+}
