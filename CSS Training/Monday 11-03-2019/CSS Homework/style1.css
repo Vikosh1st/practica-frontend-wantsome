@@ -1,0 +1,54 @@
+body {
+     background-color: #D2D2D2;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+}
+
+header {
+     background-color: rgb(100, 210, 153);
+     height: 70px;
+     width: 100%; 
+     order: 1;
+}
+
+main {
+     background-color: rgba(100, 210, 153, 0.7);
+     order: 2;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+
+footer {
+     background-color: rgb(100, 210, 153);
+     height: 70px;
+     width: 100%; 
+     order: 3;
+}
+
+.box {
+     height: 250px;
+     width: 250px;
+}
+
+.box1 {
+     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_5poLljbfsAH52BoLFcs-TnXGqf_2fvi94rJu4At00XvZNRe);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+.box2 {
+     background-image: url(https://www.adamsonford.com/inventoryphotos/182/1fa6p8th9k5124172/sp/1.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+.box3 {
+     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcFgFhdxGQC0VC2-0npk0dAAJt9nr6WHo9W5n070Afn5QLP4lx7A);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
