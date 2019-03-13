@@ -13,7 +13,7 @@ header {
 }
 
 main {
-     background-color: rgba(100, 210, 153, 0.7);
+     background-color: rgba(100, 210, 153, 0.3);
      order: 2;
      display: flex;
      flex-direction: row;

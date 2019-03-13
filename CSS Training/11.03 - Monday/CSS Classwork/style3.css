@@ -14,6 +14,7 @@
     grid-row-start: 1;
     grid-row-end: 4;
 }
+
 .b {
     background-color: white;
     grid-column-start: 1;
@@ -21,6 +22,7 @@
     grid-row-start: 4;
     grid-row-end: 8;
 }
+
 .c {
     background-color: red;
     grid-column-start: 3;
@@ -28,6 +30,7 @@
     grid-row-start: 1;
     grid-row-end: 8;
 }
+
 .d {
     background-color: blue;
     grid-column-start: 1;
@@ -35,6 +38,7 @@
     grid-row-start: 8;
     grid-row-end: 10;
 }
+
 .e {
     background-color: white;
     grid-column-start: 3;
@@ -42,6 +46,7 @@
     grid-row-start: 8;
     grid-row-end: 10;
 }
+
 .f {
     background-color: white;
     grid-column-start: 9;
@@ -49,6 +54,7 @@
     grid-row-start: 8;
     grid-row-end: 9;
 }
+
 .g {
     background-color: yellow;
     grid-column-start: 9;
