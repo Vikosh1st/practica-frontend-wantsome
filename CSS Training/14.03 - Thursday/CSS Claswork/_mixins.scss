@@ -1,0 +1,47 @@
+// @mixin menuButton {
+//     a {
+//         background-color: blue;
+//         color: white;
+//         margin: 2px;
+//         padding: 2px;
+//         border-radius: 3px;
+        
+//         &:hover {
+//             color: red;
+//         }
+
+//         &:visited {
+//             color: green;
+//         }
+//     }
+// }
+
+// @include menuButton();
+
+
+@mixin menuButton($background, $text, $hover, $visited) {
+
+    a {
+        background-color: $background;
+        color: $text;
+        margin: 2px;
+        padding: 2px;
+        border-radius: 3px;
+                        
+        &:hover {
+            color: $hover;
+        }
+        
+        &:visited {
+            color: $visited;
+        }
+    }
+}
+
+.firstButton {
+    @include menuButton(blue, white, red, green);
+}
+
+.lastButton {
+    @include menuButton(red, white, green, blue);
+}

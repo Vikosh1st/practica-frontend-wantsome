@@ -1,0 +1,20 @@
+
+body {
+    header{
+        img {
+            height: 100px;
+            border: 2px solid black;
+        }
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+}

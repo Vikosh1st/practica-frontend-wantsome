@@ -1,0 +1,9 @@
+%styles-shared {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+section {
+    @extend %styles-shared;    
+}

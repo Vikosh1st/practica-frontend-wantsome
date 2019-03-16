@@ -1,0 +1,57 @@
+body {
+  background-color: #eeffcc;
+}
+
+body header img {
+  height: 100px;
+  border: 2px solid black;
+}
+
+body header h1 {
+  font-size: 20px;
+}
+
+body nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.firstButton a {
+  background-color: blue;
+  color: white;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.firstButton a:hover {
+  color: red;
+}
+
+.firstButton a:visited {
+  color: green;
+}
+
+.lastButton a {
+  background-color: red;
+  color: white;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.lastButton a:hover {
+  color: green;
+}
+
+.lastButton a:visited {
+  color: blue;
+}
+
+section {
+  border: 2px solid black;
+  padding: 20px;
+  background-color: lightgray;
+}
+/*# sourceMappingURL=index.css.map */
