@@ -174,9 +174,14 @@ main {
   }
   .article {
     padding: 10px;
+    padding-bottom: 25px;
+  }
+  .card {
+    padding-bottom: 25px;
   }
   .story {
     text-align: center;
+    padding-bottom: 25px;
   }
 }
 
