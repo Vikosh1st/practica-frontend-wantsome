@@ -1,0 +1,12 @@
+.more {
+    background-color: $secondary-color;
+    color: $primary-color;
+    text-decoration: none;
+    padding: 10px;
+    transition: padding .3s;
+}
+
+.more:hover {
+    padding: 13px;
+    box-shadow: 3px 6px 6px 4px lightgray;
+}

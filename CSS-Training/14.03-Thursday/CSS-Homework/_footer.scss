@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+
+    .footer {
+        width: 75%;
+        border-top: 2px solid $secondary-color;
+        color: $secondary-color;
+        text-decoration: none;
+    }
+
+    .copyright {
+        float: left;
+    }
+
+    .links {
+        float: right;
+        margin: 1em;
+        i {
+            color: $secondary-color;
+        }
+    }
+}
