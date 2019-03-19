@@ -21,12 +21,17 @@ header .title {
 }
 
 header nav {
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
 }
 
-header nav ul {
-  list-style: none;
+header nav img {
+  width: 100px;
 }
 
 header nav a {
@@ -58,6 +63,9 @@ header nav .border:hover::after {
   header nav {
     text-align: center;
     padding: 10px;
+  }
+  header .title p {
+    display: none;
   }
 }
 
@@ -136,6 +144,9 @@ main {
   text-align: center;
   width: 120px;
   margin: 10px;
+}
+
+.card:hover {
   -webkit-box-shadow: 3px 6px 15px 10px lightgray;
           box-shadow: 3px 6px 15px 10px lightgray;
 }
@@ -173,8 +184,9 @@ main {
     border: none;
   }
   .article {
-    padding: 10px;
-    padding-bottom: 25px;
+    border: 1px solid #556fa7;
+    padding: 10px 10px 25px 10px;
+    margin: 10px;
   }
   .card {
     padding-bottom: 25px;
@@ -182,6 +194,9 @@ main {
   .story {
     text-align: center;
     padding-bottom: 25px;
+  }
+  .title p {
+    padding: 0px 10px;
   }
 }
 

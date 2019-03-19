@@ -52,8 +52,11 @@ main {
     text-align: center;
     width: 120px;
     margin: 10px;
-    box-shadow: 3px 6px 15px 10px lightgray;
     
+    &:hover {
+        box-shadow: 3px 6px 15px 10px lightgray;
+    }
+
     img {
         width: 70%;
         border-radius: 50%;
@@ -88,8 +91,9 @@ main {
     }
 
     .article {
-        padding: 10px;
-        padding-bottom: 25px;
+        border: 1px solid $secondary-color;
+        padding: 10px 10px 25px 10px;
+        margin: 10px;
     }
 
     .card {
@@ -99,5 +103,11 @@ main {
     .story {
         text-align: center;
         padding-bottom: 25px;
+    }
+
+    .title {
+        p {
+            padding: 0px 10px;
+        }
     }
 }

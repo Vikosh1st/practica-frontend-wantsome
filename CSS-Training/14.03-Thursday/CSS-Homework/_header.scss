@@ -15,11 +15,12 @@ header {
     }
     
     nav {
-        text-align: right;
+        display: flex;
+        justify-content: space-between;
         padding: 20px;
 
-        ul {
-            list-style: none;
+        img {
+            width: 100px;
         }
 
         a {
@@ -53,6 +54,12 @@ header {
         nav {
             text-align: center;
             padding: 10px;
+        }
+
+        .title {
+            p {
+                display: none;
+            }
         }
     }
 }
