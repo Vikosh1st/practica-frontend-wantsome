@@ -17,7 +17,6 @@ console.log(is_Blank('abc')); // False
 
 // 3. Scrieti o functie accepta ca input un string si il transforma intr-un array de cuvinte:
 function string_to_array(string) {
-    typeof string === "string" || input instanceof String;
     var array = string.split(" ");
     return array;
 }
@@ -37,14 +36,17 @@ function capitalize(str) {
 }
 console.log(capitalize('js string exercises')); //"Js string exercises"
 
-// 6. Scrieti o functie care verifica daca un string este gol sau nu.
-    // Este acelasi enunt de la punctul 2 din tema, dar se aplica din nou functia is_Blank
-console.log(is_Blank('')); // true
-console.log(is_Blank('abc')); // false
+// 6. Scrieti o functie care elimina un numar specificat de caractere pornind de la inceputul string-ului:
+function truncate_string(str1,chaNumber) {
+    return str1.substr(0, chaNumber);
+}
+console.log(truncate_string("Robin Singh",4)); // "Robi"
 
-// 7. Scrieti o functie accepta ca input un string si il transforma intr-un array de cuvinte:
-    // Este acelasi enunt de la punctul 3 din tema, dar se aplica din nou functia string_to_array
-console.log(string_to_array("Robin Singh")); // ["Robin", "Singh"]
+// 7. Scrieti o functie care specifica daca o caracterul de la o anumita pozitie specificata dintr-un string este litera mare sau nu:
+function isUpperCaseAt(str1,chaNum) {
+    return str1.charAt(chaNum) === str1.charAt(chaNum).toUpperCase()
+}
+console.log(isUpperCaseAt('Js STRING EXERCISES', 1)); // false
 
 // 8. Scrieti o functie care insereaza un string la o anumita pozitie intr-un alt string:
 function insert(str1, str2, position) {
@@ -64,7 +66,7 @@ console.log(remove_first_occurrence("The quick brown fox jumps over the lazy dog
 
 // 10. Scrieti o functie care compara doua string-uri case-insensitive:
 function compare_strings(str1,str2) {
-    return str1 != str2;
+    return str1.toUpperCase() === str2.toUpperCase();
 }
 console.log(compare_strings('abcd', 'AbcD')); // true
 
