@@ -174,25 +174,64 @@ console.log(returnRezultFromCalculation(9, 3, "divide"));
 // isDiv(7)=> 7
 
 function isDiv(number) {
-    
+    let result = new String();
+    switch (true) {
+        case number % 3 === 0 && number % 5 === 0:
+            result = "BOTH";
+        break;
+        case number % 3 === 0:
+            result = "THREE";
+        break;
+        case number % 5 === 0:
+            result = "FIVE";
+        break;
+        default:
+            result = number;
+    }
+    return result;
 }
 console.log("Ex9:");
+console.log(isDiv(15));
+console.log(isDiv(9));
+console.log(isDiv(7));
 
 //Master exercises
+console.log("Master exercises");
 //Ex10 
 // Vreau sa pot afisa data si ziua sub urmatorul format:
 // Azi este : Luni. 
 // Ora este : 20 PM : 30 : 38
 
+function returnDateAndTime(number) {
+    
+}
+console.log("Ex10:");
+
 //ex11
-// ATM-urile iti dau voie sa folosesti pin-uri din 4 sau 6 cifre. Faceti o functie care sa returneze true daca pin-ul e corect si false daca e gresit
+// ATM-urile iti dau voie sa folosesti pin-uri din 4 sau 6 cifre. Faceti o functie care sa returneze true 
+// daca pin-ul e corect si false daca e gresit
 // validPin("1234") => true
 // validPin("12345") => false
 // validPin("z23f") => false
 
+function validPin(string) {
+    
+}
+console.log("Ex11:");
+console.log(validPin("1234"));
+console.log(validPin("12345"));
+console.log(validPin("z23f"));
+
+
 //ex12
 //Folosind regex vreau sa scot toate vocalele dintr-un string
 // removeVowels("Hey I am developer") => "Hy m dvlpr"
+
+function removeVowels(string) {
+    
+}
+console.log("Ex12:");
+console.log(removeVowels("Hey I am developer"));
 
 //ex13
 //Vreau sa am o functie care sa verifice daca un numar este patrat
@@ -200,6 +239,13 @@ console.log("Ex9:");
 // isSquareNumber(25) => true
 // isSquareNumber(3) => false
 
+function isSquareNumber(number) {
+    
+}
+console.log("Ex13:");
+console.log(isSquareNumber(-1));
+console.log(isSquareNumber(25));
+console.log(isSquareNumber(3));
 
 //ex14
 // Vreau sa am o functie care sa verifice daca un cuvant este o anagrama- daca toate literele din primul 
@@ -207,3 +253,10 @@ console.log("Ex9:");
 
 // isAnagram("School master", "The class room") => true
 // isAnagram("silent", "listen") => true
+
+function verifyAnagram(str1,str2) {
+    
+}
+console.log("Ex14:");
+console.log(isAnagram("School master", "The class room"));
+console.log(isAnagram("silent", "listen"));
