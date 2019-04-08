@@ -125,9 +125,20 @@ console.log(stringEndComparison("Hello World","Worlds"))
 //Implementati o functie care accepta doua argumente: un array si o functie de adevar. Functia returneaza primul 
 //element din array care trece testul specificat
 
-// Nu sunt sigur de ce se cere in enunt, inteleg ca functia creata trebuie sa primeasca ca si argument o alta 
-// functie, asta ar insemna un parametru de callback, ceea ce e mai avansat decat ce am facut pana acum, si 
-// nu cred ca asta se cere in enunt.
+var condition = function(number) {
+    if (number % 4 === 0) {
+        return number;
+    }  
+}
+function returnFirstArrayElementThatMeatsTheCondition(array,cond) {
+    for (var i in array) {
+        if (cond(array[i])) {
+            return array[i];
+        }
+    }
+}
+
+console.log(returnFirstArrayElementThatMeatsTheCondition([1,3,6,8,9,11], condition));
 
 //Ex11
 //Implementati o functie care accepta ca argumente doua string-uri si verifica daca primul string contine toate 
