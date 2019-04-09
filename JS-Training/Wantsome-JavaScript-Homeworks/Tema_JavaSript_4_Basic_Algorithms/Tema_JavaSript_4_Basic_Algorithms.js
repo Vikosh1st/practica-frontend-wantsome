@@ -21,7 +21,7 @@ console.log(emailProtection("ovidiu.grigoras@test.com"))
 function upperCaseEveryFirstLetter(string) {
     var splitString = string.split(" ");
     var finalString = "";
-    for (i = 0; i < splitString.length; i++) {
+    for (var i = 0; i < splitString.length; i++) {
         var stringUpperCaseFirstLetter = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1) + " ";
         finalString += stringUpperCaseFirstLetter;
     }
@@ -55,7 +55,7 @@ console.log(switchLetterCapitalization("XXxYyZzz"));
 
 function concatString(str,howManyTimes) {
     var finalString = "";
-    for (i = 1; i <= howManyTimes; i++) {
+    for (var i = 1; i <= howManyTimes; i++) {
         finalString += str
     }
     return finalString;
@@ -112,7 +112,7 @@ console.log(returnFactorialOfPositiveIntegerNumber(5));
 
 function stringEndComparison(str1,str2) {
     var splitString2 = str2.split("");
-    for (i = 1; i <= splitString2.length; i++) {
+    for (var i = 1; i <= splitString2.length; i++) {
         if (str1.charAt(str1.length - i) === str2.charAt(str2.length - i)) {
             return "The first string ends with the second string";
         } return "The first string doesn't end with the second string";
@@ -146,7 +146,7 @@ console.log(returnFirstArrayElementThatMeatsTheCondition([1,3,6,8,9,11], conditi
 
 function stringLetterComparison(string1,string2) {
     var splitStr2 = string2.split("");
-    for (i = 0; i < splitStr2.length; i++) {
+    for (var i = 0; i < splitStr2.length; i++) {
         if (string1.includes(splitStr2[i])) {
             return "All letters from string 2 could be found in string 1";
         } 
