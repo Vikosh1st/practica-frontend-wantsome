@@ -197,15 +197,28 @@ console.log(isDiv(7));
 
 //Master exercises
 console.log("Master exercises");
+
+
 //Ex10 
 // Vreau sa pot afisa data si ziua sub urmatorul format:
 // Azi este : Luni. 
 // Ora este : 20 PM : 30 : 38
 
 function returnDateAndTime(number) {
-    
+    let currentDate = new Date();
+    let daysOfWeek = [ "Duminica", "Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata"];
+    let ordinalDateWithDayOfWeek = "Azi este: " + daysOfWeek[currentDate.getDay()];
+    let ampm ="";
+    if (currentDate.getHours() >= 0 && currentDate.getHours() < 12) {
+        ampm = "AM";
+    } else {
+        ampm = "PM";
+    }
+    let timestamp = "Ora este: " + currentDate.getHours() + " " + ampm +  " : " + currentDate.getMinutes() + " : " + currentDate.getSeconds();
+    return ordinalDateWithDayOfWeek + "\n" + timestamp;
 }
 console.log("Ex10:");
+console.log(returnDateAndTime());
 
 //ex11
 // ATM-urile iti dau voie sa folosesti pin-uri din 4 sau 6 cifre. Faceti o functie care sa returneze true 
@@ -214,8 +227,16 @@ console.log("Ex10:");
 // validPin("12345") => false
 // validPin("z23f") => false
 
-function validPin(string) {
-    
+function validPin(pin) {
+    if (isNaN(pin)) {
+        return false;
+    } else { 
+        if (pin.length === 4 || pin.length === 6) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 console.log("Ex11:");
 console.log(validPin("1234"));
@@ -227,8 +248,8 @@ console.log(validPin("z23f"));
 //Folosind regex vreau sa scot toate vocalele dintr-un string
 // removeVowels("Hey I am developer") => "Hy m dvlpr"
 
-function removeVowels(string) {
-    
+function removeVowels(str) {
+    return str.replace(/[aeiou]/gi, '');
 }
 console.log("Ex12:");
 console.log(removeVowels("Hey I am developer"));
@@ -240,23 +261,36 @@ console.log(removeVowels("Hey I am developer"));
 // isSquareNumber(3) => false
 
 function isSquareNumber(number) {
-    
+        return number > 0 && Math.sqrt(number) % 1 === 0;
 }
 console.log("Ex13:");
 console.log(isSquareNumber(-1));
 console.log(isSquareNumber(25));
 console.log(isSquareNumber(3));
+console.log(isSquareNumber(9));
 
 //ex14
 // Vreau sa am o functie care sa verifice daca un cuvant este o anagrama- daca toate literele din primul 
 // string se regasesc in al doilea
-
 // isAnagram("School master", "The class room") => true
 // isAnagram("silent", "listen") => true
 
-function verifyAnagram(str1,str2) {
-    
+function isAnagram(string1,string2) {
+    let str1 = string1.toLowerCase();
+    let str2 = string2.toLowerCase();
+    let str1RemoveSpaces = str1.split(" ");
+    let str2RemoveSpaces = str2.split(" ");
+    let str1Split = str1RemoveSpaces.join("").split("");
+    let str2Split = str2RemoveSpaces.join("").split("");
+    let str1Sorted = str1Split.sort().join("");
+    let str2Sorted = str2Split.sort().join("");
+    if (str1Sorted === str2Sorted) {
+        return true;
+    } else {
+        return false; 
+    }   
 }
 console.log("Ex14:");
-console.log(isAnagram("School master", "The class room"));
+console.log(isAnagram("School master","The class room"));
 console.log(isAnagram("silent", "listen"));
+console.log(isAnagram("silentio", "listen"));
