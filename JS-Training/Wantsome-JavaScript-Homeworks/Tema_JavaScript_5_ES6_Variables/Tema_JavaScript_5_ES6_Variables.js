@@ -261,7 +261,7 @@ console.log(removeVowels("Hey I am developer"));
 // isSquareNumber(3) => false
 
 function isSquareNumber(number) {
-        return number > 0 && Math.sqrt(number) % 1 === 0;
+    return number > 0 && Math.sqrt(number) % 1 === 0;
 }
 console.log("Ex13:");
 console.log(isSquareNumber(-1));
@@ -294,5 +294,3 @@ console.log("Ex14:");
 console.log(isAnagram("School master","The class room"));
 console.log(isAnagram("silent", "listen"));
 console.log(isAnagram("silentio", "listen"));
-
-

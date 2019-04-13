@@ -174,11 +174,13 @@ console.log(returnArrayUntilTheValue(["Banana", "Orange", "Lemon", "Apple", "Man
 //Scrieti o functie care elimina toate valorile false dintr-un array: false, null, 0, "", undefined, NaN
 var falsyArray = ["Banana", 0, "Orange", false, "Lemon", "", "Apple", undefined, "Mango", NaN, null];
 
+// varianta 1
 function removeFalseValuesFromArray(array) {
     return array.filter(Boolean);
 }
 console.log(removeFalseValuesFromArray(falsyArray));
 
+// varianta 2
 function removeFalseValuesFromArray2(array2) {
     var newArray = [];
     for (var i = 0; i < array2.length; i++) {
