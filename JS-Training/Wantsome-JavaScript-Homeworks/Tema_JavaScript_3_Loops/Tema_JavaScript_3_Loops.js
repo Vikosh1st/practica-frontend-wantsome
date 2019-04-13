@@ -34,8 +34,8 @@ curent cu 9 si se va afisa rezultatul. (exemplu: “3*9=27”).
 Scrieti functia in doua variante: while si for */
 
 //Rezolvare using for:
-result = "";
-iteration = "";
+var result = "";
+var iteration = "";
 for (var b = 0; b <= 10; b++) {
     result = b * 9;
     iteration += b + "*9=" + result + "\n";
@@ -56,8 +56,8 @@ while (c <= 10) {
  …
  1 * 10 = 10 ) */
 
-rezultat = "";
-linie = "";
+var rezultat = "";
+var linie = "";
 for (m = 0; m <= 10; m++) {
     for (n = 0; n <= 10; n++) {
         rezultat = m * n;
