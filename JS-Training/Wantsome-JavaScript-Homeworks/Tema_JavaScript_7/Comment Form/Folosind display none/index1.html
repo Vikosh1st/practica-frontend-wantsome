@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Tema JS 7 - Comment Form</title>
+</head>
+<body>
+     <form>
+          <input type="checkbox" name="comment" id="checkbox" onchange="showTextArea()">
+          <label for="comment">I have additional obervations</label><br>
+          <textarea rows="5" cols="55" id="text" style="display:none;" onchange="enableButton()"></textarea><br>
+          <p id="error" style="color: red; display: none; margin-top: 0">Text added needs to have between 1 and 160 characters</p>
+          <button id="submitButton" onclick="verifyNumberOfChar()" type="button" disabled>Send feedback</button>
+     </form>
+     <script src="index1.js"></script>
+</body>
+</html>
