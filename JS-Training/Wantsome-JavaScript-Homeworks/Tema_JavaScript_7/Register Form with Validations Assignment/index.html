@@ -5,10 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register Form with Validations Assignment</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    
-
-    
+    <form>
+        <h1>Get your own Site 42 Sites in account in seconds</h1>
+        <label for="username">USERNAME:</label><br>
+        <p class="error" id="usernameError">Please enter a username</p>
+        <input type="text" name="username" id="username">
+        <p>(Must be at least 4 characters, letters and numbers only)</p>
+        <label for="email">EMAIL ADDRESS:</label><br>
+        <p class="error" id="emailError">Please enter a valid email address</p>
+        <input type="text" name="email" id="email">
+        <p>We send your registration email to this address. (Double-check your email address before continuing)</p>
+        <label for="firstname">FIRST NAME:</label><br>
+        <p class="error" id="firstnameError">Please enter a First Name</p>
+        <input type="text" name="firstname" id="firstname">
+        <p>(Must be input)</p>
+        <label for="lastname">LAST NAME:</label><br>
+        <p class="error" id="lastnameError">Please enter a Last Name</p>
+        <input type="text" name="lastname" id="lastname">
+        <p>(Must be input)</p>
+        <label for="nickname">NICKNAME:</label><br>
+        <input type="text" name="nickname" id="nickname">
+        <p>(Must be input)</p>
+        <label for="phone">PHONE:</label><br>
+        <p class="error" id="phoneError">Please enter a Phone Number</p>
+        <input type="text" name="phone" id="phone">
+        <p>(Must be at least 10 characters, numbers only)</p>
+        <div>
+            <input type="radio" name="site" id="site" checked>
+            <label for="site">GIMME A SITE!</label><br>
+            <input type="radio" name="onlyuser" id="onlyuser">
+            <label for="onlyuser">JUST A USERNAME, PLEASE</label><br><br>
+        </div>
+        <button type="button" onclick="validateForm()">NEXT</button>
+    </form>
+    <script src="index.js"></script>
 </body>
 </html>
