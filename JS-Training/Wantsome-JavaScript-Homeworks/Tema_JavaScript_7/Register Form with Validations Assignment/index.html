@@ -35,12 +35,12 @@
         <input type="text" name="phone" id="phone">
         <p>(Must be at least 10 characters, numbers only)</p>
         <div>
-            <input type="radio" name="site" id="site" checked>
+            <input type="radio" name="radioButton" id="site" checked>
             <label for="site">GIMME A SITE!</label><br>
-            <input type="radio" name="onlyuser" id="onlyuser">
+            <input type="radio" name="radioButton" id="onlyuser">
             <label for="onlyuser">JUST A USERNAME, PLEASE</label><br><br>
         </div>
-        <button type="button" onclick="validateForm()">NEXT</button>
+        <button type="button" onclick="validateForm(); submitForm();">NEXT</button>
     </form>
     <script src="index.js"></script>
 </body>

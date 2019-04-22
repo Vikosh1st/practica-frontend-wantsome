@@ -4,12 +4,14 @@ const validateForm = () => {
     let firstname = document.getElementById("firstname").value;
     let lastname = document.getElementById("lastname").value;
     let phone = document.getElementById("phone").value;
-    if (username === "") {
+    let emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let alphanumeric =  /^[a-z0-9]+$/i;
+    if (username.length < 4 || alphanumeric.test(username) === false) {
         document.getElementById("usernameError").style.display = "block";
     } else {
         document.getElementById("usernameError").style.display = "none";
     }
-    if (email === "") {
+    if (emailFormat.test(email) === false) {
         document.getElementById("emailError").style.display = "block";
     } else {
         document.getElementById("emailError").style.display = "none";
@@ -24,10 +26,23 @@ const validateForm = () => {
     } else {
         document.getElementById("lastnameError").style.display = "none";
     }
-    if (phone === "") {
+    if (phone.length < 10 || isNaN(phone) === true) {
         document.getElementById("phoneError").style.display = "block";
     } else {
         document.getElementById("phoneError").style.display = "none";
-        alert("The form has been submitted, please check your email for further details");
+    }
+}
+
+const submitForm = () => {
+    let allErrorElements = document.querySelectorAll(".error");
+    console.log(allErrorElements)
+    let displayType
+    for (let i = 0; i < allErrorElements.length; i++) {
+        
+        displayType = allErrorElements[i]
+        console.log(displayType)
+    }
+    if (displayType.style.display === "none") {
+        alert("Your form has been submitted, please check your email for further details");
     }
 }
