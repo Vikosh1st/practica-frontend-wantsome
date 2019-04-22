@@ -35,14 +35,11 @@ const validateForm = () => {
 
 const submitForm = () => {
     let allErrorElements = document.querySelectorAll(".error");
-    console.log(allErrorElements)
-    let displayType
+    let errorElem;
     for (let i = 0; i < allErrorElements.length; i++) {
-        
-        displayType = allErrorElements[i]
-        console.log(displayType)
+        errorElem = allErrorElements[i];
     }
-    if (displayType.style.display === "none") {
+    if (errorElem.style.display === "none") {
         alert("Your form has been submitted, please check your email for further details");
     }
 }
