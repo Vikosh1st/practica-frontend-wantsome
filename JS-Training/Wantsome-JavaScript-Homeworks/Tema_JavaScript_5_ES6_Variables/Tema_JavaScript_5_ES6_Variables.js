@@ -2,7 +2,7 @@
 //Vreau sa am o functie care sa-mi calculeze suma dintre 2 numere daca ele sunt diferite iar daca sunt egale
 // sa-mi imulteasca suma lor cu 5. ex myFunction(10, 5) - outpot 15 / myFunction(10,10) - output 100
 
-function returnSum(a,b) {
+const returnSum = (a,b) => {
     if (a !== b) {
       return a + b;
     } 
@@ -19,11 +19,10 @@ console.log(returnSum(10,10));
 //testFunction(15,15) - true
 //testFunction(10, 15) - false
   
-function equalTo30(a,b) {
+const equalTo30 = (a,b) => {
     if (a === 30 && b === 30) {
         return true;
-    }
-    else if (a + b === 30) {
+    } else if (a + b === 30) {
         return true;
     } else {
         return false;
@@ -41,19 +40,19 @@ console.log(equalTo30(10,15));
 //checkString('isEasy') - JSisEasy
 //checkString(null) - JS
   
-function addJsToYourString(str) {
+const addJsToYourString = (str) => {
     if (str) {
         if (str.charAt(0) === "J" && str.charAt(1) === "S") {
             return str;
         } else {
-            return "JS " + str;
+            return "JS" + str;
         }
         } else {
             return "JS";
         }
 }
 console.log("Ex3:");
-console.log(addJsToYourString('JSisAwsome'));
+console.log(addJsToYourString('JSisAwesome'));
 console.log(addJsToYourString('isEasy'));
 console.log(addJsToYourString(null));
   
@@ -62,7 +61,7 @@ console.log(addJsToYourString(null));
 //removeDuplicates('aabcdeef') - 'abcdef'
 //removeDuplicates(122334) - 1234
 
-function removeDuplicates(str) {
+const removeDuplicates = (str) => {
     let array = str.toString().split("");
     for (let i = 0; i < array.length; i++) {
         for (let j = i + 1; j < array.length; j++) {
@@ -82,7 +81,7 @@ console.log(removeDuplicates(122334));
 // Gasiti cel mai lung string intr-o fraza
 //findLongestString('Wantsome is Awsomeeee today') - output 'Awsomeeee'
 
-function findLongestWordInAString(str) {
+const findLongestWordInAString = (str) => {
     let splitStr = str.split(" ");
     let longestWord = 0;
     let finalString = "";
@@ -95,9 +94,9 @@ function findLongestWordInAString(str) {
     return finalString;
 }
 console.log("Ex5:");
-console.log(findLongestWordInAString("Wantsome is Awsomeeee today"));
-console.log(findLongestWordInAString("Wantsome is Awsome today"));
-console.log(findLongestWordInAString("Wantsome is Awsome todayyyyy"));
+console.log(findLongestWordInAString("Wantsome is Awesomeeee today"));
+console.log(findLongestWordInAString("Wantsome is Awesome today"));
+console.log(findLongestWordInAString("Wantsome is Awesome todayyyyy"));
 
 //Ex6
 //Scrieti o functie care sa aiba output-ul asta
@@ -107,7 +106,7 @@ console.log(findLongestWordInAString("Wantsome is Awsome todayyyyy"));
 // * * * *  
 // * * * * *  
 
-function returnRepeatedStar() {
+const returnRepeatedStar = () => {
     let str = "* ";
     let result = "";
     let i = 0;
@@ -122,8 +121,7 @@ returnRepeatedStar();
 
 //ex7
 const negativeNumbers = [];
-
-function extractNegativeNumbers(numbers) {
+const extractNegativeNumbers = (numbers) => {
     // append any negative numbers found in the numbers array 
     // into the negativeNumbers array constant variable above
     for(let i = 0; i < numbers.length; i++) {
@@ -142,7 +140,7 @@ console.log(negativeNumbers);
 //ex calculate(2, 5, "add") => 7
 //calculate(10, 8, "substract") => 2
 
-function returnRezultFromCalculation(a,b,operator) {
+const returnRezultFromCalculation = (a,b,operator) => {
     let result = new Number();
     switch (true) {
         case operator === "add":
@@ -173,7 +171,7 @@ console.log(returnRezultFromCalculation(9, 3, "divide"));
 // isDiv(9)=> "THREE"
 // isDiv(7)=> 7
 
-function isDiv(number) {
+const isDiv = (number) => {
     let result = new String();
     switch (true) {
         case number % 3 === 0 && number % 5 === 0:
@@ -196,15 +194,14 @@ console.log(isDiv(9));
 console.log(isDiv(7));
 
 //Master exercises
-console.log("Master exercises");
-
+console.log("Master exercises:");
 
 //Ex10 
 // Vreau sa pot afisa data si ziua sub urmatorul format:
 // Azi este : Luni. 
 // Ora este : 20 PM : 30 : 38
 
-function returnDateAndTime(number) {
+const returnDateAndTime = (number) => {
     let currentDate = new Date();
     let daysOfWeek = [ "Duminica", "Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata"];
     let ordinalDateWithDayOfWeek = "Azi este: " + daysOfWeek[currentDate.getDay()];
@@ -227,7 +224,7 @@ console.log(returnDateAndTime());
 // validPin("12345") => false
 // validPin("z23f") => false
 
-function validPin(pin) {
+const validPin = (pin) => {
     if (isNaN(pin)) {
         return false;
     } else { 
@@ -248,7 +245,7 @@ console.log(validPin("z23f"));
 //Folosind regex vreau sa scot toate vocalele dintr-un string
 // removeVowels("Hey I am developer") => "Hy m dvlpr"
 
-function removeVowels(str) {
+const removeVowels = (str) => {
     return str.replace(/[aeiou]/gi, '');
 }
 console.log("Ex12:");
@@ -260,7 +257,7 @@ console.log(removeVowels("Hey I am developer"));
 // isSquareNumber(25) => true
 // isSquareNumber(3) => false
 
-function isSquareNumber(number) {
+const isSquareNumber = (number) => {
     return number > 0 && Math.sqrt(number) % 1 === 0;
 }
 console.log("Ex13:");
@@ -275,7 +272,7 @@ console.log(isSquareNumber(9));
 // isAnagram("School master", "The class room") => true
 // isAnagram("silent", "listen") => true
 
-function isAnagram(string1,string2) {
+const isAnagram = (string1,string2) => {
     let str1 = string1.toLowerCase();
     let str2 = string2.toLowerCase();
     let str1RemoveSpaces = str1.split(" ");
