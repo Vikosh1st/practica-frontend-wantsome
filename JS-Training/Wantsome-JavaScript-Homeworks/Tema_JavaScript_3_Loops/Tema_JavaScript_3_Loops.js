@@ -3,94 +3,101 @@ Pentru fiecare iteratie, verifica daca numarul curent este par sau impar si va
 raporta acest lucru in consola. (exemplu: “2 este numar par”);
 Scrieti functia in doua variante: while si for */
 
+console.log("Exercise 1:");
 //Rezolvare using for:
-var text = "";
-for (var i = 0; i <= 20; i++) {
-    // verificam daca valoarea numerica pentru i din cadrul iteratiei curente este para
-    if (i % 2 == 0) { // i este par, deci afisam "i este numar par"
-        text += i + " este numar par" + "\n";
-        continue;
+console.log("Answer 1 using FOR loop:");
+const isEvenUsingFor = () => {
+    let text = "";
+    for (let i = 0; i <= 20; i++) {
+        // verificam daca valoarea numerica pentru i din cadrul iteratiei curente este para
+        if (i % 2 == 0) { // i este par, deci afisam "i este numar par"
+            text += i + " este numar par" + "\n";
+            continue;
+        }
+        // daca executia ajunge aici, inseamna ca i este impar
+        text += i + " este numar impar" + "\n";
     }
-    // daca executia ajunge aici, inseamna ca i este impar
-    text += i + " este numar impar" + "\n";
+    return text;
 }
+console.log(isEvenUsingFor());
 
 //Rezolvare using while:
-var a = -1; // var text a fost declarat mai sus
-while (a < 20) {
-    a++;
-    if (a % 2 == 0) { // i este par, deci afisam "i este numar par"
-        text += a + " este numar par" + "\n";
-        continue;
-    }
+console.log("Answer 2 using WHILE loop:");
+const isEvenUsingWhile = () => {
+    let text = "";
+    let a = -1; // var text a fost declarat mai sus
+    while (a < 20) {
+        a++;
+        if (a % 2 == 0) { // i este par, deci afisam "i este numar par"
+            text += a + " este numar par" + "\n";
+            continue;
+        }
         // daca executia ajunge aici, inseamna ca i este impar
-    text += a + " este numar impar" + "\n";
+        text += a + " este numar impar" + "\n";
+    }
+    return text;
 }
+console.log(isEvenUsingWhile());
 
-//console.log(text)
+
 
 /* 2. Scrieti un for care itereaza de la 0 la 10. Pentru fiecare iteratie, se va multiplica numarul 
 curent cu 9 si se va afisa rezultatul. (exemplu: “3*9=27”).
 Scrieti functia in doua variante: while si for */
-
+console.log("Exercise 2:");
 //Rezolvare using for:
-var result = "";
-var iteration = "";
-for (var b = 0; b <= 10; b++) {
-    result = b * 9;
-    iteration += b + "*9=" + result + "\n";
+console.log("Answer 1 using FOR loop:");
+const multiplyBy9UsingFor = () => {
+    let result = "";
+    let iteration = "";
+    for (let i = 0; i <= 10; i++) {
+        result = i * 9;
+        iteration += i + "*9=" + result + "\n";
+    }
+    return iteration;
 }
-
+console.log(multiplyBy9UsingFor());
 //Rezolvare using while:
-var c = 0;
-while (c <= 10) {
-    result = c * 9;
-    iteration += c + "*9=" + result + "\n";
-    c++;
+console.log("Answer 2 using WHILE loop:");
+const multiplyBy9UsingWhile = () => {
+    let iteration = "";
+    let i = 0;
+    while (i <= 10) {
+        result = i * 9;
+        iteration += i + "*9=" + result + "\n";
+        i++;
+    }
+    return iteration;
 }
-//console.log(iteration);
+console.log(multiplyBy9UsingWhile());
 
 /* 3. Pentru fiecare cifra de la 1 la 10, afisati tabla inmultirii. 
 (exemplu: 1 * 0 = 0
  1 * 1 = 1
  …
  1 * 10 = 10 ) */
-
-var rezultat = "";
-var linie = "";
-for (m = 0; m <= 10; m++) {
-    for (n = 0; n <= 10; n++) {
-        rezultat = m * n;
-        linie += m + " * " + n + " = " + rezultat + "\n";
+console.log("Exercise 3:");
+const multiplicationTable = () => {
+    var result = "";
+    var line = "";
+    for (let i = 0; i <= 10; i++) {
+        for (let j = 0; j <= 10; j++) {
+            result = i * j;
+            line += i + " * " + j + " = " + result + "\n";
+        }
     }
+    return line;
 }
-// console.log(linie);
+console.log(multiplicationTable());
 
-/* Pentru functia dezvoltata la cerinta 2 de la tema anterioara, verificati si afisati in consola fiecare
+/* 4. Pentru functia dezvoltata la cerinta 2 de la tema anterioara, verificati si afisati in consola fiecare
 calificativ care se poate obtine pentru punctajele incepand de 1 la 10. (exemplu: “Pentru 2, obtii 
 calificativul E. \n Pentru 7, obtii calificativul B \n ...samd “). Atentie: Rezultatul calificativul 
 trebuie sa fie obtinut prin utilizarea functiei dezvoltate la tema anterioara ! */
 
-var calificativul = "";
-var textul = "";
-for (punctajul = 1; punctajul <= 10; punctajul++) {
-    if (punctajul <= 3) {
-        calificativul = "E";
-    } else if (punctajul > 3 && punctajul <= 6) {
-        calificativul = "D";
-    } else if (punctajul > 6 && punctajul <= 8) {
-        calificativul = "B";
-    } else if (punctajul === 9) {
-        calificativul = "A";
-    } else if (punctajul === 10) {
-        calificativul = "A+";
-    }
-    textul += "Pentru punctajul " + punctajul + ", obtii calificativul " + calificativul + "\n";
-}
-console.log("Rezolvare exercitiu:");
-console.log(textul);
 
-/* Exercitiu 2 din tema anterioara: Scrieti o functie de tip function expression care accepta ca argument o valoare numerica cuprinsa intre 1 si 10 si 
+// Am modificat functia de la tema anterioara pentru a obtine doar calificativul, in loc de to textul:
+/* 2. Scrieti o functie de tip function expression care accepta ca argument o valoare numerica cuprinsa intre 1 si 10 si 
 decide calificativul punctajului. Criteriile sunt urmatoarele:
 - 1-3 = E
 - 3-6 = D
@@ -99,32 +106,34 @@ decide calificativul punctajului. Criteriile sunt urmatoarele:
 - 10 = A+
 Functia va returna un text de forma "Calificatul corespunzator punctajului [punctaj] este [calificativ]".*/
 
-// Rezolvarea exercitiului de la tema 2 JS:
-var calificativCorespunzatorPunctajului = function(punctaj) {
-    if ( punctaj >= 1 && punctaj <= 10 ) { // Pentru ca punctajul sa fie cuprins intre 1 si 10
+const markMatchingTheSpecificGrade = (grade) => {
+    if ( grade >= 1 && grade <= 10 ) { // Pentru ca punctajul sa fie cuprins intre 1 si 10
         switch (true) { // Pentru a returna calificativul atribuit fiecarui punctaj
-            case punctaj >= 1 && punctaj <= 3:
-            calificativ = "E";
+            case grade >= 1 && grade <= 3:
+            mark = "E";
             break;
-            case punctaj > 3 && punctaj <= 6: 
-            calificativ = "D";
+            case grade > 3 && grade <= 6: 
+            mark = "D";
             break;
-            case punctaj > 6 && punctaj <= 8:
-            calificativ = "B";
+            case grade > 6 && grade <= 8:
+            mark = "B";
             break;
-            case punctaj === 9:
-            calificativ = "A";
+            case grade === 9:
+            mark = "A";
             break;
-            case punctaj === 10:
-            calificativ = "A+";
-        } return "Calificatul corespunzator punctajului " + punctaj + " este " + calificativ;
+            case grade === 10:
+            mark = "A+";
+        } return mark;
     } return "Punctajul trebuie sa fie cuprins intre valoarea 1 si 10 pentru a putea calcula calificativul";
 }
 
-console.log("Exercitiul 2 din tema 2:");
-console.log(calificativCorespunzatorPunctajului(2));
-console.log(calificativCorespunzatorPunctajului(4));
-console.log(calificativCorespunzatorPunctajului(7));
-console.log(calificativCorespunzatorPunctajului(9));
-console.log(calificativCorespunzatorPunctajului(10));
-console.log(calificativCorespunzatorPunctajului(20));
+const listAllMarksMatchingTheSpecificGrade = () => {
+    let text = "";
+    for (let i = 1; i <= 10; i++) {
+        mark = markMatchingTheSpecificGrade(i);
+        text += "Pentru punctajul " + i + ", obtii calificativul " + mark + "\n";
+    }
+    return text;
+}
+console.log("Exercise 4:");
+console.log(listAllMarksMatchingTheSpecificGrade());
