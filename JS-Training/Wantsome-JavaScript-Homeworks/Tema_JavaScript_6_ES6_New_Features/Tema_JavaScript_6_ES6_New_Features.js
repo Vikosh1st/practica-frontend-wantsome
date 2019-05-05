@@ -12,6 +12,7 @@ const uncapitalize = (str) => {
     let firstLetter = str.charAt(0);
     return firstLetter.toLowerCase() + str.slice(1);
 }
+console.log("Ex1:");
 console.log(uncapitalize('Js string exercises')); //"js string exercises"
 
 // Primul exercitiu din Tema JS 2 - Function types and Conditions
@@ -26,6 +27,7 @@ const verifySexFromCnp = (CNP) => {
         return "Persoana verificata este de sexul Feminin";
     } else return "CNP-ul nu este valid";
 }
+console.log("Ex2:");
 console.log(verifySexFromCnp(1870330));
 console.log(verifySexFromCnp(2870330));
 console.log(verifySexFromCnp(9870330));
@@ -33,31 +35,41 @@ console.log(verifySexFromCnp(9870330));
 // Primul exercitiu din Tema JS 3 - Loops
 /* Scrieti un for care itereaza de la 0 la 20. Pentru fiecare iteratie, verifica daca numarul curent este par sau impar si va
 raporta acest lucru in consola. (exemplu: “2 este numar par”). Scrieti functia in doua variante: while si for */
-
+console.log("Ex3:");
 //Rezolvare using for:
-let text = "";
-for (let i = 0; i <= 20; i++) {
-    // verificam daca valoarea numerica pentru i din cadrul iteratiei curente este para
-    if (i % 2 == 0) { // i este par, deci afisam "i este numar par"
-        text += i + " este numar par" + "\n";
-        continue;
+console.log("Answer 1 using FOR loop:");
+const isEvenUsingFor = () => {
+    let text = "";
+    for (let i = 0; i <= 20; i++) {
+        // verificam daca valoarea numerica pentru i din cadrul iteratiei curente este para
+        if (i % 2 == 0) { // i este par, deci afisam "i este numar par"
+            text += i + " este numar par" + "\n";
+            continue;
+        }
+        // daca executia ajunge aici, inseamna ca i este impar
+        text += i + " este numar impar" + "\n";
     }
-    // daca executia ajunge aici, inseamna ca i este impar
-    text += i + " este numar impar" + "\n";
+    return text;
 }
+console.log(isEvenUsingFor());
 
 //Rezolvare using while:
-let a = -1; // var text a fost declarat mai sus
-while (a < 20) {
-    a++;
-    if (a % 2 == 0) { 
-        text += a + " este numar par" + "\n";
-        continue;
+console.log("Answer 2 using WHILE loop:");
+const isEvenUsingWhile = () => {
+    let text = "";
+    let a = -1; // var text a fost declarat mai sus
+    while (a < 20) {
+        a++;
+        if (a % 2 == 0) { // i este par, deci afisam "i este numar par"
+            text += a + " este numar par" + "\n";
+            continue;
+        }
+        // daca executia ajunge aici, inseamna ca i este impar
+        text += a + " este numar impar" + "\n";
     }
-    text += a + " este numar impar" + "\n";
+    return text;
 }
-
-//console.log(text)
+console.log(isEvenUsingWhile());
 
 // Ultimul exercitiu din Tema JS 4 - Basic Algorithms
 //Scrieti o functie care repeta un string de n ori specificate
@@ -68,6 +80,7 @@ const repeatString = (string,howManyTimesToRepeat) => {
         return repeatedString += string.repeat(howManyTimesToRepeat);
     }
 }
+console.log("Ex4:");
 console.log(repeatString("Hello World! ", 5));
 
 // Ultimul exercitiu din Tema JS 5 - ES6 Variables
@@ -85,6 +98,7 @@ const isAnagram = (string1,string2) => {
     let str2Sorted = str2Split.sort().join("");
     return (str1Sorted === str2Sorted) ? true : false; 
 }
+console.log("Ex5:");
 console.log(isAnagram("School master","The class room"));
 console.log(isAnagram("silent", "listen"));
 console.log(isAnagram("silentio", "listen"));
@@ -106,6 +120,7 @@ const getCount = (str) => {
     }
     return vowelsCount;
 }
+console.log("CodeWars Ex1:");
 console.log(getCount("everyone loves frontend development"));
 
 /* 2. The Western Suburbs Croquet Club has two categories of membership, Senior and Open. They would like your help with 
@@ -135,6 +150,7 @@ const openOrSenior = (data) => {
     }
     return members;
 }
+console.log("CodeWars Ex2:");
 console.log(openOrSenior([[18, 20],[45, 2],[61, 12],[37, 6],[21, 21],[78, 9]]))
 
 /* 3. In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list 
@@ -154,6 +170,7 @@ const filterList = (l) => {
     }
     return newArr;
 }
+console.log("CodeWars Ex3:");
 console.log(filterList([1,2,'a','b']));
 console.log(filterList([1,2,'aasf','1','123',123]));
 
@@ -174,6 +191,7 @@ const numberOfPeopleLeft = (busStops) => {
     }
     return number;
 }
+console.log("CodeWars Ex4:");
 console.log(numberOfPeopleLeft([[10,0],[3,5],[5,8]]));
 console.log(numberOfPeopleLeft([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]));
 
