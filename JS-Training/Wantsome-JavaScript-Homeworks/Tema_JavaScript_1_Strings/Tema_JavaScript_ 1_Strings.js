@@ -1,78 +1,88 @@
-var hello = "Tema JavaScript 1 - Strings";
+const hello = "Tema JavaScript 1 - Strings";
 console.log(hello);
 
 // 1. Scrieti o functie care verifica daca un input este sau nu de tip string.
-function is_string(input) {
-    return typeof input === "string" || input instanceof String;
+const isString = (str) => {
+    return typeof str === "string" || str instanceof String;
 }
-console.log(is_string('w3resource')); // true
-console.log(is_string([1, 2, 4, 0])); // false
+console.log("ex1:");
+console.log(isString('wantsome')); // true
+console.log(isString([1, 2, 4, 0])); // false
 
 // 2. Scrieti o functie care verifica daca un string este gol sau nu.
-function is_Blank(str) {
+const isBlank = (str) => {
     return str === "";
 }
-console.log(is_Blank('')); // true
-console.log(is_Blank('abc')); // False
+console.log("ex2:");
+console.log(isBlank('')); // true
+console.log(isBlank('abc')); // false
 
 // 3. Scrieti o functie accepta ca input un string si il transforma intr-un array de cuvinte:
-function string_to_array(string) {
-    var array = string.split(" ");
+const stringToArray = (str) => {
+    let array = str.split(" ");
     return array;
 }
-console.log(string_to_array("Robin Singh")); // ["Robin", "Singh"]
+console.log("ex3:");
+console.log(stringToArray("Robin Singh")); // ["Robin", "Singh"]
 
 // 4. Scrieti o functie care transforma un string in forma abreviata:
-function abbrev_name(str) {
-    var splitName = str.split(" ");
+const abbrevStr = (str) => {
+    let splitName = str.split(" ");
     return splitName[0] + " " + splitName[1].charAt(0) + ".";
 }
-console.log(abbrev_name("Robin Singh")); //"Robin S."
+console.log("ex4:");
+console.log(abbrevStr("Robin Singh")); //"Robin S."
 
 // 5. Scrieti o functie care face prima litera a unui string sa fie de tip capital ( litera mare ):
-function capitalize(str) {
-    var firstLetter = str.charAt(0);
+const capitalizeFirstLetter = (str) => {
+    let firstLetter = str.charAt(0);
     return firstLetter.toUpperCase() + str.slice(1);
 }
-console.log(capitalize('js string exercises')); //"Js string exercises"
+console.log("ex5:");
+console.log(capitalizeFirstLetter('js string exercises')); //"Js string exercises"
 
 // 6. Scrieti o functie care elimina un numar specificat de caractere pornind de la inceputul string-ului:
-function truncate_string(str1,chaNumber) {
-    return str1.substr(0, chaNumber);
+const truncateString = (str,charNumber) => {
+    return str.substr(0, charNumber);
 }
-console.log(truncate_string("Robin Singh",4)); // "Robi"
+console.log("ex6:");
+console.log(truncateString("Robin Singh",4)); // "Robi"
 
 // 7. Scrieti o functie care specifica daca o caracterul de la o anumita pozitie specificata dintr-un string este litera mare sau nu:
-function isUpperCaseAt(str1,chaNum) {
-    return str1.charAt(chaNum) === str1.charAt(chaNum).toUpperCase()
+const isUpperCaseAt = (str,charNumber) => {
+    return str.charAt(charNumber) === str.charAt(charNumber).toUpperCase()
 }
+console.log("ex7:");
 console.log(isUpperCaseAt('Js STRING EXERCISES', 1)); // false
 
 // 8. Scrieti o functie care insereaza un string la o anumita pozitie intr-un alt string:
-function insert(str1, str2, position) {
+const insertString = (str1, str2, position) => {
     return str1.substr(0, position) + str2 + str1.substr(position);
 }
-console.log(insert('We are doing some exercises.','JavaScript ',18));
+console.log("ex8:");
+console.log(insertString('We are doing some exercises.','JavaScript ',18));
 
-/* "We are doing some exercises."
-"JavaScript We are doing some exercises."
-"We are doing some JavaScript exercises." */
+/* "We are doing some exercises." + "JavaScript" = "We are doing some JavaScript exercises." */
 
 // 9. Scrieti o functie care elimina prima aparitie a unui string dintr-un alt string:
-function remove_first_occurrence(str1,str2) {
+const removeFirstOccurrence = (str1,str2) => {
     return str1.replace(str2,"");
 }
-console.log(remove_first_occurrence("The quick brown fox jumps over the lazy dog", 'the ')); //"The quick brown fox jumps over lazy dog"
+console.log("ex9:");
+console.log(removeFirstOccurrence("The quick brown fox jumps over the lazy dog", 'the ')); 
+//"The quick brown fox jumps over lazy dog"
 
 // 10. Scrieti o functie care compara doua string-uri case-insensitive:
-function compare_strings(str1,str2) {
+const compareStrings = (str1,str2) => {
     return str1.toUpperCase() === str2.toUpperCase();
 }
-console.log(compare_strings('abcd', 'AbcD')); // true
+console.log("ex10:");
+console.log(compareStrings('abcd', 'AbcD')); // true
 
-// 11. Scrieti o functie care face ca primul caracter a unui string sa fie de tip uncapital:
-function Uncapitalize(str) {
-    var firstLetter = str.charAt(0);
+// 11. Scrieti o functie care face ca primul caracter al unui string sa fie de tip uncapital:
+const unCapitalizeFirstLetter = (str) => {
+    let firstLetter = str.charAt(0);
     return firstLetter.toLowerCase() + str.slice(1);
 }
-console.log(Uncapitalize('Js string exercises')); //"js string exercises"
+console.log("ex11:");
+console.log(unCapitalizeFirstLetter('Js string exercises')); //"js string exercises"
