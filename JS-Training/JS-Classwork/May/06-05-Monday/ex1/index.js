@@ -1,5 +1,5 @@
-  // The Car and the Truck class have similar behavior and properties.
-  // Rewrite them in a way such that they share those properties.
+// The Car and the Truck class have similar behavior and properties.
+// Rewrite them in a way such that they share those properties.
 
 function constructor(driver,speed) {
     this.driver = driver;
