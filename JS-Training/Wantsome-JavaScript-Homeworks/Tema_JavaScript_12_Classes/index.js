@@ -26,8 +26,7 @@ class Transaction {
 }
 
 class Table {
-    constructor (transactions) {
-        transactions = []
+    constructor (...transactions) {
         this.transactions = transactions;
     }
 
@@ -44,7 +43,7 @@ console.log(transaction1.finalSum);
 const transaction2 = new Transaction("Wantsome","ING",1280,"Partial payment number 2");
 console.log(transaction2);
 const table = new Table();
-console.log(table)
+console.log(table);
 table.addTransaction(transaction1);
 table.addTransaction(transaction2);
 console.log(table)
