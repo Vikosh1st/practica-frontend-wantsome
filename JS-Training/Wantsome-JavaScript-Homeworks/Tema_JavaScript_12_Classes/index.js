@@ -26,12 +26,12 @@ class Transaction {
 }
 
 class Table {
-    constructor (...transactions) {
-        this.transactions = transactions;
+    constructor () {
+        this.transactions = [];
     }
 
-    addTransaction(transaction) {
-        return this.transactions.push(transaction);
+    addTransaction(...transaction) {
+        return this.transactions.push(...transaction);
     }
 }
 
