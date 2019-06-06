@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ItemTitle = (props) => (
-    <h3>{props.title}</h3>
+    <h4>{props.title}</h4>
 )
 
 export default ItemTitle;

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "1",
+        "imgUrl": "https://www.phillymag.com/wp-content/uploads/sites/3/2018/09/apartments-for-rent-arch-st-interior.jpg",
+        "whatToRent": "ENTIRE APARTMENT",
+        "city": "ROME",
+        "title": "Pattinarihome Campo di FIORI",
+        "reviews": "588"
+    },
+    {
+        "id": "2",
+        "imgUrl": "https://cdngeneral.rentcafe.com/dmslivecafe/3/662279/p0671212_27_1_photogallery.jpg?crop=(0,0,300,180)&cropxunits=300&cropyunits=180&width=380&quality=80",
+        "whatToRent": "ENTIRE APARTMENT",
+        "city": "MINSK",
+        "title": "Minsk Belarus Studio in historical center",
+        "reviews": "307"
+    },
+    {
+        "id": "3",
+        "imgUrl": "https://thespaces.com/wp-content/uploads/2017/01/Holiday-home-for-rent-Seascape-New-Zealand-10.jpg",
+        "whatToRent": "ENTIRE COTTAGE",
+        "city": "GOVERNADOR CELSO RAMOS",
+        "title": "Exceptional property private beach",
+        "reviews": "88"
+    },
+    {
+        "id": "4",
+        "imgUrl": "https://s3.us-east-2.amazonaws.com/4stay/pictures/images/000/018/659/large/DSC05448.jpg?1522734741",
+        "whatToRent": "PRIVATE ROOM",
+        "city": "MARRAKESH",
+        "title": "The Cozy Palace",
+        "reviews": "552"
+    },
+    {
+        "id": "5",
+        "imgUrl": "https://timeincsecure-a.akamaihd.net/rtmp_uds/293884104/201711/1105/293884104_5645915791001_5645909850001-vs.jpg?pubId=293884104&videoId=5645909850001",
+        "whatToRent": "TREEHOUSE",
+        "city": "VOLCANO",
+        "title": "Treehouse at Kilauea Volcano",
+        "reviews": "379"
+    },
+    {
+        "id": "6",
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Q8XD8TlFlnHNo0uYJ1Tha_G06Ml9RNTw5mKTZ2_-lKdhzYzuhA",
+        "whatToRent": "TREEHOUSE",
+        "city": "FLORENCE",
+        "title": "Splendida Casa sull'Albero a Pochi Minuti da Firenze",
+        "reviews": "412"
+    },
+    {
+        "id": "7",
+        "imgUrl": "https://www.tripsavvy.com/thmb/NB2skAmIfaSqfbE4x6UwtHfCc9o=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/RVsite-5a18b9e613f1290038919860.jpg",
+        "whatToRent": "CAMPER/RV",
+        "city": "WIMBERLEY",
+        "title": "Super Cute Retro Airstream",
+        "reviews": "417"
+    },
+    {
+        "id": "8",
+        "imgUrl": "https://static.erm-assets.com/r1-112-0-419/dynamicimages/resize/us-erm/H18070919531493/1/1024.jpg?modified=20180709224329",
+        "whatToRent": "PRIVATE ROOM",
+        "city": "CASABLANCA",
+        "title": "Green Oasis Bougainvillea in Casa",
+        "reviews": "461"
+    }
+]

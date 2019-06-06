@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.App {
+  margin: 20px 200px;
+  border: 2px solid lightgray;
+  padding: 20px;
+}
+
+.Listings {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.itemForRent {
+  max-height: 500px;
+  max-width: 250px;
+  margin: 10px;
+ }
+
+.itemRating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h3 {
+  margin-left: 10px;
+  text-align: left;
+}
+
+p {
+  margin: 0px;
+  text-align: left;
+  font-size: 12px;
+}
+
+h4 {
+  margin: 0px;
+  text-align: left;
+  font-size: 12px;
+}
